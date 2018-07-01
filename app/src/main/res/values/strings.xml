@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Fair Wage</string>
+
+    <!--Login-->
+    <string name="askRegister">¿No eres miembro? Regístrate ahora.</string>
+
+    <!--Registro-->
+    <string name="registerScreen">Pantalla de Registro</string>
+    <string name="askLogin">¿Ya registrado? Inicia sesión.</string>
+    <string name="incorrectLogin">Login incorrecto</string>
+
+    <!--Busqueda-->
+    <string name="searchScreen">Pantalla de Búsqueda</string>
+
+    <!--Usuario-->
+    <string name="myemail">myemail</string>
+    <string name="id">Id</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="nameInput">Introduzca nombre</string>
+
+    <!--Usuario Perfil-->
+    <string name="profileScreen">Perfil de Usuario</string>
+    <string name="nameProfile">Nombre: </string>
+    <string name="surnamesProfile">Apellidos: </string>
+    <string name="jobProfile">Trabajo: </string>
+    <string name="companyProfile">Empresa: </string>
+    <string name="wageProfile">Sueldo: </string>
+    <string name="emailProfile">Email: </string>
+    <string name="telephoneProfile">Teléfono: </string>
+    <string name="universityProfile">Universidad: </string>
+    <string name="careerProfile">Carrera: </string>
+    <string name="sector1Profile">Sector 1: </string>
+    <string name="sector2Profile">Sector 2: </string>
+    <string name="expirienceProfile">Experiencia: </string>
+    <string name="languagesProfile">Lenguajes: </string>
+    <string name="knowledgesProfile">Conocimientos: </string>
+    <string name="currency">€</string>
+
+    <!--Usuario Perfil Ediccion-->
+    <string name="editScreen">Edición de Usuario</string>
+    <string name="name">Nombre</string>
+    <string name="surnames">Apellidos</string>
+    <string name="job">Trabajo</string>
+    <string name="company">Empresa</string>
+    <string name="wage">Sueldo</string>
+    <string name="email">Email</string>
+    <string name="telephone">Teléfono</string>
+    <string name="university">Universidad</string>
+    <string name="career">Carrera</string>
+    <string name="sector1">Sector1</string>
+    <string name="sector2">Sector2</string>
+    <string name="experience">Experiencia</string>
+    <string name="languages">Lenguajes</string>
+    <string name="knowledges">Conocimientos</string>
+    <string name="nameVisibility">Visibilidad_Nombre</string>
+    <string name="surnamesVisibility">Visibilidad_Apellidos</string>
+    <string name="jobVisibility">Visibilidad_Trabajo</string>
+    <string name="companyVisibility">Visibilidad_Empresa</string>
+    <string name="wageVisibility">Visibilidad_Sueldo</string>
+    <string name="emailVisibility">Visibilidad_Email</string>
+    <string name="telephoneVisibility">Visibilidad_Teléfono</string>
+    <string name="universityVisibility">Visibilidad_Universidad</string>
+    <string name="careerVisibility">Visibilidad_Carrera</string>
+    <string name="sector1Visibility">Visibilidad_Sector1</string>
+    <string name="sector2Visibility">Visibilidad_Sector2</string>
+    <string name="experienceVisibility">Visibilidad_Experiencia</string>
+    <string name="languagesVisibility">Visibilidad_Lenguajes</string>
+    <string name="knowledgesVisibility">Visibilidad_Conocimientos</string>
+
+    <!--Listado de Perfiles-->
+    <string name="contactListScreen">Listado de Contactos</string>
+
+    <!--Perfil del Contacto-->
+    <string name="contactProfileScreen">Perfil del Contacto</string>
+
+    <!--Pantalla Envío Negociación-->
+    <string name="negotiationRequestScreen">Pantalla de Negociación</string>
+    <string name="userData">Mis datos</string>
+    <string name="contactData">Datos contacto</string>
+
+    <!--Botones-->
+    <string name="accept">Aceptar</string>
+    <string name="send">Enviar</string>
+    <string name="sendNegotiation">Enviar Negociación</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Borrar</string>
+    <string name="save">Guardar</string>
+    <string name="search">Buscar</string>
+    <string name="logout">Desconectar</string>
+
+    <!--Errores-->
+    <string name="emptyFields">Hay campos importantes sin rellenar</string>
+</resources>

@@ -1,0 +1,231 @@
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:prepareLintJar UP-TO-DATE
+:app:mainApkListPersistenceDebug UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\tooltip.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_ic_menu_share_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_textfield_search_default_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxhdpi-v4\abc_text_select_handle_middle_mtrl_light.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_action_bar_up_container.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_ab_share_pack_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_scrubber_control_to_pressed_mtrl_005.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_search_dropdown_item_icons_2line.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_scrubber_control_to_pressed_mtrl_000.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_text_select_handle_middle_mtrl_light.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxxhdpi-v4\abc_text_select_handle_right_mtrl_dark.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_textfield_search_default_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_list_selector_disabled_holo_dark.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\color\abc_primary_text_disable_only_material_light.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable\abc_btn_default_mtrl_shape.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\color\abc_secondary_text_material_light.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-ldrtl-xxhdpi-v17\abc_ic_menu_copy_mtrl_am_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_screen_simple_overlay_action_mode.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_textfield_search_activated_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\color\abc_primary_text_material_light.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_popup_menu_header_item_layout.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\anim\tooltip_enter.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_ic_menu_cut_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-ldrtl-xhdpi-v17\abc_spinner_mtrl_am_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-mdpi-v4\abc_text_select_handle_left_mtrl_dark.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxhdpi-v4\abc_ic_star_black_36dp.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5e913a0ad26b911d3f88f955d5b2305b\res\layout\notification_template_lines_media.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_textfield_search_activated_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\select_dialog_multichoice_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3a989dca4b8a4f9bd7e921f7ec875d6a\res\drawable-xhdpi-v4\notification_bg_normal.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_list_focused_holo.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_btn_radio_to_on_mtrl_000.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_btn_radio_to_on_mtrl_015.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-mdpi-v4\abc_textfield_search_activated_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-mdpi-v4\abc_ic_menu_cut_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_screen_toolbar.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\color-v23\abc_tint_btn_checkable.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3a989dca4b8a4f9bd7e921f7ec875d6a\res\drawable-hdpi-v4\notification_bg_normal_pressed.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable\abc_list_selector_background_transition_holo_light.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable\abc_switch_thumb_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_list_pressed_holo_dark.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\anim\abc_fade_in.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\color-v23\abc_btn_colored_borderless_text_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-ldrtl-xxxhdpi-v17\abc_ic_menu_copy_mtrl_am_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-ldrtl-hdpi-v17\abc_ic_menu_cut_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_ic_menu_copy_mtrl_am_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_cab_background_top_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-mdpi-v4\abc_ic_commit_search_api_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-ldrtl-xxxhdpi-v17\abc_ic_menu_cut_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_cab_background_top_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_list_selector_disabled_holo_dark.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3a989dca4b8a4f9bd7e921f7ec875d6a\res\drawable-v21\notification_action_background.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_dialog_title_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-ldrtl-mdpi-v17\abc_ic_menu_cut_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxhdpi-v4\abc_ic_menu_selectall_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxxhdpi-v4\abc_scrubber_control_to_pressed_mtrl_005.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-mdpi-v4\abc_textfield_default_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3a989dca4b8a4f9bd7e921f7ec875d6a\res\drawable-hdpi-v4\notification_bg_low_normal.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\color\abc_primary_text_disable_only_material_dark.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxxhdpi-v4\abc_spinner_mtrl_am_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\select_dialog_singlechoice_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_list_selector_disabled_holo_light.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-v21\abc_btn_colored_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable\abc_textfield_search_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-mdpi-v4\abc_list_divider_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\5e913a0ad26b911d3f88f955d5b2305b\res\layout\notification_template_big_media_narrow_custom.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxxhdpi-v4\abc_switch_track_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-ldrtl-xhdpi-v17\abc_ic_menu_copy_mtrl_am_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xhdpi-v4\abc_list_longpressed_holo.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_list_divider_mtrl_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable\abc_seekbar_track_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-mdpi-v4\abc_spinner_mtrl_am_alpha.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_select_dialog_material.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3a989dca4b8a4f9bd7e921f7ec875d6a\res\drawable-mdpi-v4\notification_bg_normal.9.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_expanded_menu_layout.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\3a989dca4b8a4f9bd7e921f7ec875d6a\res\layout\notification_template_part_time.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-xxxhdpi-v4\abc_btn_check_to_on_mtrl_015.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_screen_simple.xml: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\drawable-hdpi-v4\abc_scrubber_control_off_mtrl_alpha.png: error: file not found.
+C:\Users\Rub?n S?nchez\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\e426c128d3ad83fa781fcf47b974b0c0\res\layout\abc_action_menu_layout.xml: error: file not found.
+Error: java.util.concurrent.ExecutionException: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+:app:mergeDebugResources FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> Error: java.util.concurrent.ExecutionException: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+
+* Try:
+Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:mergeDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:100)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+	at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+	at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: com.android.build.gradle.tasks.ResourceException: Error: java.util.concurrent.ExecutionException: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:296)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:106)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:46)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+	... 29 more
+Caused by: Error: java.util.concurrent.ExecutionException: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+	at com.android.ide.common.res2.MergedResourceWriter.end(MergedResourceWriter.java:332)
+	at com.android.ide.common.res2.DataMerger.mergeData(DataMerger.java:301)
+	at com.android.ide.common.res2.ResourceMerger.mergeData(ResourceMerger.java:412)
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:285)
+	... 41 more
+	Suppressed: java.lang.RuntimeException: Some file processing failed, see logs for details
+		at com.android.builder.internal.aapt.QueuedResourceProcessor.waitForAll(QueuedResourceProcessor.java:121)
+		at com.android.builder.internal.aapt.QueuedResourceProcessor.end(QueuedResourceProcessor.java:141)
+		at com.android.builder.internal.aapt.v2.QueueableAapt2.close(QueueableAapt2.java:104)
+		at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:293)
+		at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:106)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+		at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:46)
+		at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:39)
+		at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:26)
+		at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter$1.run(ExecuteActionsTaskExecuter.java:121)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+		at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:110)
+		at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:92)
+		at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:70)
+		at org.gradle.api.internal.tasks.execution.OutputDirectoryCreatingTaskExecuter.execute(OutputDirectoryCreatingTaskExecuter.java:51)
+		at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+		at org.gradle.api.internal.tasks.execution.ResolveTaskOutputCachingStateExecuter.execute(ResolveTaskOutputCachingStateExecuter.java:54)
+		at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:60)
+		at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:97)
+		at org.gradle.api.internal.tasks.execution.CleanupStaleOutputsExecuter.execute(CleanupStaleOutputsExecuter.java:87)
+		at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:52)
+		at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+		at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+		at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+		at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+		at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.run(DefaultTaskGraphExecuter.java:248)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+		at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+		at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:241)
+		at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:230)
+		at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.processTask(DefaultTaskPlanExecutor.java:123)
+		at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.access$200(DefaultTaskPlanExecutor.java:79)
+		at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:104)
+		at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker$1.execute(DefaultTaskPlanExecutor.java:98)
+		at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.execute(DefaultTaskExecutionPlan.java:626)
+		at org.gradle.execution.taskgraph.DefaultTaskExecutionPlan.executeWithTask(DefaultTaskExecutionPlan.java:581)
+		at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$TaskExecutorWorker.run(DefaultTaskPlanExecutor.java:98)
+		at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+		at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+		at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:462)
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79)
+	at com.android.ide.common.res2.MergedResourceWriter.end(MergedResourceWriter.java:327)
+	... 44 more
+Caused by: java.util.concurrent.ExecutionException: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:462)
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79)
+	at com.android.builder.internal.aapt.v2.QueueableAapt2.lambda$compile$0(QueueableAapt2.java:136)
+Caused by: com.android.builder.internal.aapt.v2.Aapt2Exception: AAPT2 error: check logs for details
+	at com.android.builder.png.AaptProcess$NotifierProcessOutput.handleOutput(AaptProcess.java:443)
+	at com.android.builder.png.AaptProcess$NotifierProcessOutput.err(AaptProcess.java:395)
+	at com.android.builder.png.AaptProcess$ProcessOutputFacade.err(AaptProcess.java:312)
+	at com.android.utils.GrabProcessOutput$1.run(GrabProcessOutput.java:104)
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 7s
+9 actionable tasks: 1 executed, 8 up-to-date
