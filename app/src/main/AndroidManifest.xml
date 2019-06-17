@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.urjc.rubnsnchez.fairwage">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -8,37 +11,19 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".init.MyApplication">
+        android:name=".app.MyApplication"
+        tools:ignore="AllowBackup">
 
         <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.LoginActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.RegisterActivity"
-            android:label="Pantalla de Registro"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.contacts.SearchActivity"
-            android:label="Pantalla de Búsqueda"
+            android:name="com.urjc.rubnsnchez.fairwage.app.init.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.contacts.ProfileActivity"
-            android:label="Pantalla de Búsqueda"
+            android:name="com.urjc.rubnsnchez.fairwage.app.init.RegisterActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -46,8 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.contacts.EditActivity"
-            android:label="Pantalla de Búsqueda"
+            android:name="com.urjc.rubnsnchez.fairwage.app.contacts.SearchActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -55,8 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.contacts.ContactListActivity"
-            android:label="Pantalla de Búsqueda"
+            android:name="com.urjc.rubnsnchez.fairwage.app.contacts.ProfileActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -64,8 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.contacts.ProfileContactActivity"
-            android:label="Pantalla de Búsqueda"
+            android:name="com.urjc.rubnsnchez.fairwage.app.contacts.EditActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -73,8 +55,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.urjc.rubnsnchez.fairwage.init.contacts.NegotiationActivity"
-            android:label="Pantalla de Búsqueda"
+            android:name="com.urjc.rubnsnchez.fairwage.app.contacts.ContactListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urjc.rubnsnchez.fairwage.app.contacts.ProfileContactActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.NegotiationActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.NegotationListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.ProfileReceivedContactNegotiationActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.ReceivedNegotiationActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.AcceptedContactProfile"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

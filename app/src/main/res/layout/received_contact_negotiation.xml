@@ -73,7 +73,8 @@
                 android:id="@+id/nameSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -98,7 +99,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:text=""
+                android:clickable="false"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -130,7 +132,8 @@
                 android:id="@+id/surnamesSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -155,7 +158,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -187,7 +190,8 @@
                 android:id="@+id/jobSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -212,7 +216,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -244,7 +248,8 @@
                 android:id="@+id/companySwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -269,7 +274,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -301,7 +306,8 @@
                 android:id="@+id/emailSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false" />
         </LinearLayout>
 
         <LinearLayout
@@ -326,7 +332,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -358,7 +364,8 @@
                 android:id="@+id/telephoneSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -383,7 +390,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -415,7 +422,8 @@
                 android:id="@+id/universitySwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -440,7 +448,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -472,7 +480,8 @@
                 android:id="@+id/careerSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -497,7 +506,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -529,7 +538,8 @@
                 android:id="@+id/sector1Switch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -554,7 +564,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -586,7 +596,8 @@
                 android:id="@+id/sector2Switch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -611,7 +622,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -643,7 +654,8 @@
                 android:id="@+id/experienceSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -668,7 +680,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -699,7 +711,8 @@
                 android:id="@+id/languagesSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -724,7 +737,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -756,7 +769,8 @@
                 android:id="@+id/knowledgesSwitch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:clickable="false"/>
         </LinearLayout>
 
         <LinearLayout
@@ -781,23 +795,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="" />
+                android:clickable="false" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/margin2"
+        android:layout_margin="@dimen/margin1"
         style="?android:attr/buttonBarStyle"
-        android:weightSum="2">
+        android:weightSum="3">
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="bottom"
-            android:text="@string/send"
+            android:text="@string/accept"
             android:id="@+id/sendButton"
             android:theme="@style/AppTheme.Button"
             android:layout_weight="1"
@@ -806,6 +820,25 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:text="@string/deleteNegotiation"
+            android:layout_weight="1"
+            android:id="@+id/deleteButton"
+            android:visibility="gone"
+            android:theme="@style/AppTheme.Button"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/refuseNegotiation"
+            android:layout_weight="1"
+            android:id="@+id/refuseButton"
+            android:theme="@style/AppTheme.Button"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="bottom"
             android:text="@string/cancel"
             android:id="@+id/cancelButton"

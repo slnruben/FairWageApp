@@ -1,23 +1,34 @@
-package com.urjc.rubnsnchez.fairwage.init.contacts;
+package com.urjc.rubnsnchez.fairwage.app.contacts;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.urjc.rubnsnchez.fairwage.R;
-import com.urjc.rubnsnchez.fairwage.init.MyApplication;
+import com.urjc.rubnsnchez.fairwage.app.MyApplication;
+import com.urjc.rubnsnchez.fairwage.app.common.BBDDHelper;
+import com.urjc.rubnsnchez.fairwage.app.negotiations.NegotationListActivity;
 import java.util.HashMap;
 import java.util.Map;
-import static com.urjc.rubnsnchez.fairwage.init.common.BBDDUtil.getUserData;
-import static com.urjc.rubnsnchez.fairwage.init.common.Util.setTexts;
-import static com.urjc.rubnsnchez.fairwage.init.common.Util.setVisibilityButtons;
+import java.util.Objects;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.PROFILE;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.REFUSED;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.SEARCH_NEGOTIATIONS;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.SUCCESS;
+import static com.urjc.rubnsnchez.fairwage.app.common.BBDDUtil.getUserData;
+import static com.urjc.rubnsnchez.fairwage.app.common.BBDDUtil.tableRowCount;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.isNetworkAvailable;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.sendDataPOST;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.setTexts;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.setVisibilityButtons;
 
 public class ProfileActivity extends Activity {
-    Button searchButton, editButton;
     Contact contact;
 
     private void setVisibilityButtonViews(Context context) {
@@ -117,13 +128,15 @@ public class ProfileActivity extends Activity {
         setContentView(R.layout.profile);
         final Context context = getApplicationContext();
         String user = ((MyApplication) context).getUser();
-        contact = getUserData(context, user);
+        contact = getUserData(context, user, PROFILE);
         setTextViews(context);
         setVisibilityButtonViews(context);
-        searchButton= findViewById(R.id.searchButton);
-        editButton= findViewById(R.id.editButton);
+        Button searchButton = findViewById(R.id.searchButton);
+        Button editButton = findViewById(R.id.editButton);
+        Button negotationButton = findViewById(R.id.negotationButton);
         searchButton.setOnClickListener(new searchButtonListener());
         editButton.setOnClickListener(new editButtonListener());
+        negotationButton.setOnClickListener(new negotationButtonListener());
     }
 
     private class searchButtonListener implements View.OnClickListener {
@@ -140,6 +153,48 @@ public class ProfileActivity extends Activity {
             Intent sendIntent = new Intent(ProfileActivity.this, EditActivity.class);
             startActivity(sendIntent);
             finish();
+        }
+    }
+
+    private class negotationButtonListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            if (isNetworkAvailable((ConnectivityManager) Objects.requireNonNull(getSystemService(Context.CONNECTIVITY_SERVICE)))) {
+                final Context context = getApplicationContext();
+                String user = ((MyApplication) context).getUser();
+                final String urlServer = ((MyApplication) context).getUrlServer();
+                final HashMap<String, String> postDataParams = new HashMap<>();
+                postDataParams.put(context.getString(R.string.user), user);
+                postDataParams.put(context.getString(R.string.state), REFUSED);
+                Thread tr = new Thread() {
+                    @Override
+                    public void run() {
+                        Intent sendIntent = new Intent(ProfileActivity.this, NegotationListActivity.class);
+                        String success = sendDataPOST(context, urlServer, SEARCH_NEGOTIATIONS, postDataParams);
+                        if (String.valueOf(SUCCESS).equals(success)) {
+                            final int numRows = tableRowCount(context, BBDDHelper.DataSearchNegotation.TABLE_NAME);
+                            if (numRows > 0) {
+                                startActivity(sendIntent);
+                            } else {
+                                runOnUiThread(new Thread(new Runnable() {
+                                    public void run() {
+                                        Toast.makeText(context, getString(R.string.noNegotiations), Toast.LENGTH_LONG).show();
+                                    }
+                                }));
+                            }
+                        } else {
+                            runOnUiThread(new Thread(new Runnable() {
+                                public void run() {
+                                    Toast.makeText(context, getString(R.string.searchNegotationsError), Toast.LENGTH_LONG).show();
+                                }
+                            }));
+                        }
+                    }
+                };
+                tr.start();
+            } else {
+                Toast.makeText(ProfileActivity.this, getString(R.string.searchInternetRequired), Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }

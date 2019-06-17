@@ -1,26 +1,34 @@
-package com.urjc.rubnsnchez.fairwage.init.contacts;
+package com.urjc.rubnsnchez.fairwage.app.contacts;
 
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.urjc.rubnsnchez.fairwage.R;
-import com.urjc.rubnsnchez.fairwage.init.MyApplication;
-import com.urjc.rubnsnchez.fairwage.init.common.BBDDHelper;
-
+import com.urjc.rubnsnchez.fairwage.app.MyApplication;
+import com.urjc.rubnsnchez.fairwage.app.common.BBDDHelper;
+import java.security.PublicKey;
 import java.util.HashMap;
 import java.util.Map;
-
-import static com.urjc.rubnsnchez.fairwage.init.common.BBDDUtil.createUpdatedUserBBDDValues;
-import static com.urjc.rubnsnchez.fairwage.init.common.BBDDUtil.getUserData;
-import static com.urjc.rubnsnchez.fairwage.init.common.Util.setEditTexts;
-import static com.urjc.rubnsnchez.fairwage.init.common.Util.setVisibilityButtons;
+import java.util.Objects;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.EDIT;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.SUCCESS;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.UPDATE_SERVER;
+import static com.urjc.rubnsnchez.fairwage.app.common.BBDDUtil.createUpdatedContactBBDDValues;
+import static com.urjc.rubnsnchez.fairwage.app.common.BBDDUtil.createUpdatedUserBBDDValues;
+import static com.urjc.rubnsnchez.fairwage.app.common.BBDDUtil.getUserData;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.isNetworkAvailable;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.sendDataPOST;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.setEditTexts;
+import static com.urjc.rubnsnchez.fairwage.app.common.Util.setVisibilityButtons;
 
 public class EditActivity extends Activity {
     Button nameVisibility, surnamesVisibility, emailVisibility, telephoneVisibility, jobVisibility, companyVisibility;
@@ -97,7 +105,7 @@ public class EditActivity extends Activity {
         setContentView(R.layout.edit);
         final Context context = getApplicationContext();
         String user = ((MyApplication) context).getUser();
-        contact = getUserData(context, user);
+        contact = getUserData(context, user, EDIT);
         setEditTextViews(context);
         setVisibilityButtonViews(context);
         saveButton= findViewById(R.id.saveButton);
@@ -159,16 +167,60 @@ public class EditActivity extends Activity {
             EditText experience = findViewById(R.id.experienceInput);
             EditText languages = findViewById(R.id.languagesInput);
             EditText knowledges = findViewById(R.id.knowledgesInput);
-            final Contact updatedContact = new Contact(new TextView[]{name, surnames, email, telephone, job, company, wage,
-                                        university, career, sector1, sector2, experience, languages, knowledges},
-                                        visibilityButtons, context);
-            updatedContact.setId(contact.getId());
-            final SQLiteDatabase db = bbddHelper.getWritableDatabase();
-            ContentValues values = createUpdatedUserBBDDValues(updatedContact);
-            db.update(BBDDHelper.DataUser.TABLE_NAME, values, BBDDHelper.DataUser.COLUMN_USER_ID_0 + "="+  updatedContact.getId(), null);
-            Intent sendIntent = new Intent(EditActivity.this, SearchActivity.class);
-            startActivity(sendIntent);
-            finish();
+            if (isNetworkAvailable((ConnectivityManager) Objects.requireNonNull(getSystemService(Context.CONNECTIVITY_SERVICE)))) {
+                final Contact updatedContact = new Contact(new TextView[]{name, surnames, email, telephone, job, company, wage,
+                        university, career, sector1, sector2, experience, languages, knowledges},
+                        visibilityButtons, context);
+                updatedContact.setId(contact.getId());
+                String user = ((MyApplication) context).getUser();
+                updatedContact.setUser(user);
+                updatedContact.setIdServer(contact.getIdServer());
+                final String urlServer = ((MyApplication) context).getUrlServer();
+                final HashMap<String, String> postDataParams = new HashMap<>();
+                postDataParams.put(context.getString(R.string.user), updatedContact.getUser());
+                postDataParams.put(context.getString(R.string.name), (updatedContact.getNameVisibility() == 1) ? updatedContact.getName() : "");
+                postDataParams.put(context.getString(R.string.surnames), (updatedContact.getSurnamesVisibility() == 1) ? updatedContact.getSurnames() : "");
+                postDataParams.put(context.getString(R.string.email), (updatedContact.getEmailVisibility() == 1) ? updatedContact.getEmail() : "");
+                postDataParams.put(context.getString(R.string.telephone), (updatedContact.getTelephoneVisibility() == 1) ? updatedContact.getTelephone() : "");
+                postDataParams.put(context.getString(R.string.job), (updatedContact.getJobVisibility() == 1) ? updatedContact.getJob() : "");
+                postDataParams.put(context.getString(R.string.company), (updatedContact.getCompanyVisibility() == 1) ? updatedContact.getCompany() : "");
+                postDataParams.put(context.getString(R.string.wage), updatedContact.getWage());
+                postDataParams.put(context.getString(R.string.university), (updatedContact.getUniversityVisibility() == 1) ? updatedContact.getUniversity() : "");
+                postDataParams.put(context.getString(R.string.career), (updatedContact.getCareerVisibility() == 1) ? updatedContact.getCareer() : "");
+                postDataParams.put(context.getString(R.string.sector1), (updatedContact.getSector1Visibility() == 1) ? updatedContact.getSector1() : "");
+                postDataParams.put(context.getString(R.string.sector2), (updatedContact.getSector2Visibility() == 1) ? updatedContact.getSector2() : "");
+                postDataParams.put(context.getString(R.string.experience), (updatedContact.getExperienceVisibility() == 1) ? updatedContact.getExperience() : "");
+                postDataParams.put(context.getString(R.string.languages), (updatedContact.getLanguagesVisibility() == 1) ? updatedContact.getLanguages() : "");
+                postDataParams.put(context.getString(R.string.knowledges), (updatedContact.getKnowledgesVisibility() == 1) ? updatedContact.getKnowledges() : "");
+
+                Thread tr = new Thread() {
+                    @Override
+                    public void run() {
+                    String success = sendDataPOST(context, urlServer, UPDATE_SERVER, postDataParams);
+                    if (String.valueOf(SUCCESS).equals(success)) {
+                        PublicKey publicKey = ((MyApplication) context).getPublicKey();
+                        final SQLiteDatabase db = bbddHelper.getWritableDatabase();
+                        ContentValues values = createUpdatedUserBBDDValues(updatedContact);
+                        db.update(BBDDHelper.DataUser.TABLE_NAME, values, BBDDHelper.DataUser.COLUMN_SERVER_USER_ID_1 + "="+  updatedContact.getIdServer(), null);
+                        values = createUpdatedContactBBDDValues(publicKey, updatedContact);
+                        db.update(BBDDHelper.DataContact.TABLE_NAME, values, BBDDHelper.DataContact.COLUMN_CONTACT_SERVER_ID_1 + "="+  updatedContact.getIdServer(), null);
+                        Intent sendIntent = new Intent(EditActivity.this, SearchActivity.class);
+                        startActivity(sendIntent);
+                        finish();
+                    } else {
+                        runOnUiThread(new Thread(new Runnable() {
+                            public void run() {
+                                Toast.makeText(context, getString(R.string.updateError), Toast.LENGTH_LONG).show();
+                            }
+                        }));
+                    }
+                    }
+                };
+                tr.start();
+
+            } else {
+                Toast.makeText(context, getString(R.string.internetRequired), Toast.LENGTH_SHORT).show();
+            }
         }
     }
 

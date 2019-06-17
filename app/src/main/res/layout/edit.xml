@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -47,7 +48,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/name"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/nameVisibility"
@@ -79,7 +81,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/surnames"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/surnamesVisibility"
@@ -111,7 +114,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/email"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/emailVisibility"
@@ -143,15 +147,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/telephone"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/telephoneVisibility"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:background="@drawable/ic_visibility_off"
-                    android:contentDescription="@string/telephone" />
+                    android:background="@drawable/ic_visibility_off" />
             </LinearLayout>
 
             <LinearLayout
@@ -175,7 +179,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/job"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/jobVisibility"
@@ -207,7 +212,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/company"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/companyVisibility"
@@ -238,8 +244,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:hint="@string/wage"
-                    android:inputType="number" />
+                    android:hint="@string/netWage"
+                    android:inputType="number"
+                    tools:ignore="Autofill" />
             </LinearLayout>
 
             <LinearLayout
@@ -263,7 +270,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/university"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/universityVisibility"
@@ -295,7 +303,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/career"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/careerVisibility"
@@ -327,7 +336,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/sector1"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/sector1Visibility"
@@ -359,7 +369,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/sector2"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/sector2Visibility"
@@ -383,7 +394,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:gravity="center_vertical"
-                    android:text="@string/expirienceProfile" />
+                    android:text="@string/experienceProfile" />
 
                 <EditText
                     android:id="@+id/experienceInput"
@@ -391,7 +402,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/experience"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/experienceVisibility"
@@ -423,7 +435,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:hint="@string/languages"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/languagesVisibility"
@@ -456,7 +469,8 @@
                     android:layout_weight="6"
                     android:hint="@string/knowledges"
                     android:inputType="text|textMultiLine"
-                    android:lines="4" />
+                    android:lines="4"
+                    tools:ignore="Autofill" />
 
                 <Button
                     android:id="@+id/knowledgesVisibility"
@@ -481,7 +495,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/save"
-                    android:theme="@style/AppTheme.Button" />
+                    android:theme="@style/AppTheme.Button"
+                    tools:ignore="ButtonStyle" />
 
                 <Button
                     android:id="@+id/cancelButton"
@@ -489,7 +504,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cancel"
-                    android:theme="@style/AppTheme.Button" />
+                    android:theme="@style/AppTheme.Button"
+                    tools:ignore="ButtonStyle" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

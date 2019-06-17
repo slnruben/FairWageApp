@@ -21,7 +21,8 @@
         android:layout_gravity="center_vertical"
         android:layout_marginHorizontal="@dimen/margin3"
         android:orientation="vertical"
-        android:weightSum="8">
+        android:weightSum="8"
+        tools:ignore="UnusedAttribute">
 
         <EditText
             android:id="@+id/userInput"
@@ -30,7 +31,8 @@
             android:layout_weight="1.6"
             android:focusable="true"
             android:hint="@string/user"
-            android:inputType="text" />
+            android:inputType="text"
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/passwordInput"
@@ -38,25 +40,44 @@
             android:layout_height="0dp"
             android:layout_weight="1.6"
             android:hint="@string/password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/wageInput"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.6"
-            android:hint="@string/wage"
-            android:inputType="number" />
+            android:hint="@string/netWage"
+            android:inputType="number"
+            tools:ignore="Autofill" />
 
-        <TextView
-            android:id="@+id/askLogin"
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_margin="@dimen/margin1"
+            android:layout_gravity="bottom"
             android:layout_weight="1.6"
-            android:text="@string/askLogin"
-            android:textColor="@color/black"
-            android:textSize="@dimen/normalText" />
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin1"
+                android:text="@string/isMember"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText" />
+
+            <TextView
+                android:id="@+id/askLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin1"
+                android:text="@string/askLogin"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/normalText" />
+        </LinearLayout>
 
         <LinearLayout
             style="?android:attr/buttonBarStyle"
@@ -74,7 +95,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/send"
-                android:theme="@style/AppTheme.Button" />
+                android:theme="@style/AppTheme.Button"
+                tools:ignore="ButtonStyle,NestedWeights" />
 
             <Button
                 android:id="@+id/cancelButton"
@@ -82,7 +104,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/cancel"
-                android:theme="@style/AppTheme.Button" />
+                android:theme="@style/AppTheme.Button"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

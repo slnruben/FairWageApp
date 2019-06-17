@@ -6,6 +6,6 @@
     android:fitsSystemWindows="true">
 
     <!-- Layout real de la actividad -->
-    <include layout="@layout/contact_listview" />
+    <include layout="@layout/negotation_listview" />
 
 </LinearLayout>

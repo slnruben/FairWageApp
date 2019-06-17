@@ -5,13 +5,13 @@
 
     <!--Listado-->
     <dimen name="mediumList">120dp</dimen>
-    <dimen name="labelList">24dp</dimen>
+    <dimen name="labelList">15sp</dimen>
     <dimen name="buttonWidth">46dp</dimen>
 
     <!--Padding-->
-    <dimen name="padding">5dp</dimen>
-    <dimen name="padding2">10dp</dimen>
-    <dimen name="padding3">20dp</dimen>
+    <dimen name="padding">5sp</dimen>
+    <dimen name="padding2">10sp</dimen>
+    <dimen name="padding3">20sp</dimen>
 
     <!--Margin-->
     <dimen name="margin1">5dp</dimen>

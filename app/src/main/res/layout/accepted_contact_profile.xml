@@ -230,8 +230,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin1"
                     android:layout_gravity="bottom"
-                    android:ellipsize="end"
-                    android:maxLines="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit ="marquee_forever"
                     android:textSize="@dimen/normalText" />
             </LinearLayout>
 
@@ -400,8 +404,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:text="@string/sendNegotiation"
-                android:id="@+id/sendButton"
+                android:text="@string/exit"
+                android:id="@+id/exitButton"
                 android:theme="@style/AppTheme.Button" />
 
         </LinearLayout>

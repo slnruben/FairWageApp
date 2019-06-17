@@ -1,13 +1,19 @@
-package com.urjc.rubnsnchez.fairwage.init.contacts;
+package com.urjc.rubnsnchez.fairwage.app.contacts;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Base64;
 import android.widget.Button;
 import android.widget.TextView;
 import com.urjc.rubnsnchez.fairwage.R;
-import static com.urjc.rubnsnchez.fairwage.init.MyApplication.LOGIN;
-import static com.urjc.rubnsnchez.fairwage.init.MyApplication.REGISTER;
+
+import java.security.PrivateKey;
+
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.LOGIN;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.REGISTER;
+import static com.urjc.rubnsnchez.fairwage.app.MyApplication.SEARCH;
+import static com.urjc.rubnsnchez.fairwage.app.common.CipherUtil.decrypt;
 
 /**
  * Clase que define un contacto.
@@ -16,6 +22,9 @@ import static com.urjc.rubnsnchez.fairwage.init.MyApplication.REGISTER;
  */
 public class Contact {
     private int id;
+    private int idServer;
+    private byte[] privateKey;
+    private byte[] publicKey;
     private String user;
     private String password;
     private String name;
@@ -46,50 +55,164 @@ public class Contact {
     private int languagesVisibility;
     private int knowledgesVisibility;
 
-    public Contact(String user, String wage) {
-        this.user = user;
+    public Contact(String wage, String job, String sector1, String sector2) {
+        this.job = job;
         this.wage = wage;
+        this.sector1 = sector1;
+        this.sector2 = sector2;
+    }
+
+    public Contact(String name, String surnames, String email, String telephone, String job, String company, String wage,
+                   String university, String career, String sector1, String sector2, String experience, String languages,
+                   String knowledges) {
+        this.name = name;
+        this.surnames = surnames;
+        this.email = email;
+        this.telephone = telephone;
+        this.job = job;
+        this.company = company;
+        this.wage = wage;
+        this.university = university;
+        this.career = career;
+        this.sector1 = sector1;
+        this.sector2 = sector2;
+        this.experience = experience;
+        this.languages = languages;
+        this.knowledges = knowledges;
     }
 
     /**
      * Contructor.
      * @param c Contiene los datos de un contacto obtenidos de un SELECT en SQLite.
      */
-    public Contact(Cursor c) {
-        this.id = c.getInt(0);
-        this.user = c.getString(1);
-        this.password = c.getString(2);
-        this.name = c.getString(3);
-        this.surnames = c.getString(4);
-        this.email = c.getString(5);
-        this.telephone = c.getString(6);
-        this.job = c.getString(7);
-        this.company = c.getString(8);
-        if ("".equals(c.getString(9))) {
-            this.wage = "0";
+    public Contact(Cursor c, int state) {
+        if (state == SEARCH) {
+            this.id = c.getInt(0);
+            this.user = c.getString(1);
+            this.publicKey = c.getBlob(2);
+            this.name = c.getString(3);
+            this.surnames = c.getString(4);
+            this.email = c.getString(5);
+            this.telephone = c.getString(6);
+            this.job = c.getString(7);
+            this.company = c.getString(8);
+            if ("".equals(c.getString(9))) {
+                this.wage = "0";
+            } else {
+                this.wage = c.getString(9);
+            }
+            this.university = c.getString(10);
+            this.career = c.getString(11);
+            this.sector1 = c.getString(12);
+            this.sector2 = c.getString(13);
+            this.experience = c.getString(14);
+            this.languages = c.getString(15);
+            this.knowledges = c.getString(16);
         } else {
-            this.wage = c.getString(9);
+            this.id = c.getInt(0);
+            this.idServer = c.getInt(1);
+            //this.publicKey = c.getBlob(2);
+            this.name = c.getString(3);
+            this.surnames = c.getString(4);
+            this.email = c.getString(5);
+            this.telephone = c.getString(6);
+            this.job = c.getString(7);
+            this.company = c.getString(8);
+            if ("".equals(c.getString(9))) {
+                this.wage = "0";
+            } else {
+                this.wage = c.getString(9);
+            }
+            this.university = c.getString(10);
+            this.career = c.getString(11);
+            this.sector1 = c.getString(12);
+            this.sector2 = c.getString(13);
+            this.experience = c.getString(14);
+            this.languages = c.getString(15);
+            this.knowledges = c.getString(16);
+            //this.state = c.getString(17);
+            this.user = c.getString(20);
+            this.password = c.getString(21);
+            this.privateKey = c.getBlob(22);
+            this.publicKey = c.getBlob(23);
+            this.nameVisibility = c.getInt(24);
+            this.surnamesVisibility = c.getInt(25);
+            this.emailVisibility = c.getInt(26);
+            this.telephoneVisibility = c.getInt(27);
+            this.jobVisibility = c.getInt(28);
+            this.companyVisibility = c.getInt(29);
+            this.universityVisibility = c.getInt(30);
+            this.careerVisibility = c.getInt(31);
+            this.sector1Visibility = c.getInt(32);
+            this.sector2Visibility = c.getInt(33);
+            this.experienceVisibility = c.getInt(34);
+            this.languagesVisibility = c.getInt(35);
+            this.knowledgesVisibility = c.getInt(36);
         }
-        this.university = c.getString(10);
-        this.career = c.getString(11);
-        this.sector1 = c.getString(12);
-        this.sector2 = c.getString(13);
-        this.experience = c.getString(14);
-        this.languages = c.getString(15);
-        this.knowledges = c.getString(16);
-        this.nameVisibility = c.getInt(17);
-        this.surnamesVisibility = c.getInt(18);
-        this.emailVisibility = c.getInt(19);
-        this.telephoneVisibility = c.getInt(20);
-        this.jobVisibility = c.getInt(21);
-        this.companyVisibility = c.getInt(22);
-        this.universityVisibility = c.getInt(23);
-        this.careerVisibility = c.getInt(24);
-        this.sector1Visibility = c.getInt(25);
-        this.sector2Visibility = c.getInt(26);
-        this.experienceVisibility = c.getInt(27);
-        this.languagesVisibility = c.getInt(28);
-        this.knowledgesVisibility = c.getInt(29);
+    }
+
+    public Contact(Cursor c, int state, PrivateKey privateKey) {
+        if (state == SEARCH) {
+            this.id = c.getInt(0);
+            this.user = c.getString(1);
+            this.name = decrypt(privateKey, c.getBlob(3));
+            this.surnames = decrypt(privateKey, c.getBlob(4));
+            this.email = decrypt(privateKey, c.getBlob(5));
+            this.telephone = decrypt(privateKey, c.getBlob(6));
+            this.job = decrypt(privateKey, c.getBlob(7));
+            this.company = decrypt(privateKey, c.getBlob(8));
+            if ("".equals(c.getString(9))) {
+                this.wage = "0";
+            } else {
+                this.wage = c.getString(9);
+            }
+            this.university = decrypt(privateKey, c.getBlob(10));
+            this.career = decrypt(privateKey, c.getBlob(11));
+            this.sector1 = decrypt(privateKey, c.getBlob(12));
+            this.sector2 = decrypt(privateKey, c.getBlob(13));
+            this.experience = decrypt(privateKey, c.getBlob(14));
+            this.languages = decrypt(privateKey, c.getBlob(15));
+            this.knowledges = decrypt(privateKey, c.getBlob(16));
+        } else {
+            this.id = c.getInt(0);
+            this.idServer = c.getInt(1);
+            this.name = decrypt(privateKey, c.getBlob(3));
+            this.surnames = decrypt(privateKey, c.getBlob(4));
+            this.email = decrypt(privateKey, c.getBlob(5));
+            this.telephone = decrypt(privateKey, c.getBlob(6));
+            this.job = decrypt(privateKey, c.getBlob(7));
+            this.company = decrypt(privateKey, c.getBlob(8));
+            if ("".equals(c.getString(9))) {
+                this.wage = "0";
+            } else {
+                this.wage = c.getString(9);
+            }
+            this.university = decrypt(privateKey, c.getBlob(10));
+            this.career = decrypt(privateKey, c.getBlob(11));
+            this.sector1 = decrypt(privateKey, c.getBlob(12));
+            this.sector2 = decrypt(privateKey, c.getBlob(13));
+            this.experience = decrypt(privateKey, c.getBlob(14));
+            this.languages = decrypt(privateKey, c.getBlob(15));
+            this.knowledges = decrypt(privateKey, c.getBlob(16));
+            //this.state = c.getString(17);
+            this.user = c.getString(20);
+            this.password = c.getString(21);
+            this.privateKey = c.getBlob(22);
+            this.publicKey = c.getBlob(23);
+            this.nameVisibility = c.getInt(24);
+            this.surnamesVisibility = c.getInt(25);
+            this.emailVisibility = c.getInt(26);
+            this.telephoneVisibility = c.getInt(27);
+            this.jobVisibility = c.getInt(28);
+            this.companyVisibility = c.getInt(29);
+            this.universityVisibility = c.getInt(30);
+            this.careerVisibility = c.getInt(31);
+            this.sector1Visibility = c.getInt(32);
+            this.sector2Visibility = c.getInt(33);
+            this.experienceVisibility = c.getInt(34);
+            this.languagesVisibility = c.getInt(35);
+            this.knowledgesVisibility = c.getInt(36);
+        }
     }
 
     /**
@@ -99,6 +222,7 @@ public class Contact {
     public Contact(Bundle bundle) {
        // this.id = (int) bundle.get(String.valueOf(R.string.id));
         this.user = (String) bundle.get(String.valueOf(R.string.user));
+        this.publicKey = Base64.decode((String) bundle.get(String.valueOf(R.string.publicKey)), Base64.NO_WRAP);
         this.name = (String) bundle.get(String.valueOf(R.string.name));
         this.surnames = (String) bundle.get(String.valueOf(R.string.surnames));
         this.email = (String) bundle.get(String.valueOf(R.string.email));
@@ -246,12 +370,44 @@ public class Contact {
         this.id = id;
     }
 
+    public int getIdServer() {
+        return idServer;
+    }
+
+    public void setIdServer(int idServer) {
+        this.idServer = idServer;
+    }
+
     public String getUser() {
         return user;
     }
 
+    public void setUser(String user) {
+        this.user = user;
+    }
+
     public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public byte[] getPrivateKey() {
+        return privateKey;
+    }
+
+    public void setPrivateKey(byte[] privateKey) {
+        this.privateKey = privateKey;
+    }
+
+    public byte[] getPublicKey() {
+        return publicKey;
+    }
+
+    public void setPublicKey(byte[] publicKey) {
+        this.publicKey = publicKey;
     }
 
     public String getName() {

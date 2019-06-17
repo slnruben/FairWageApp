@@ -8,7 +8,7 @@
     <LinearLayout
         android:id="@+id/layoutJob"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_weight="1">
         <TextView
@@ -98,5 +98,27 @@
                 android:layout_marginStart="@dimen/margin1"
                 android:textSize="@dimen/littleText" />
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/littleText"
+            android:text="@string/state"/>
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding"
+            android:paddingBottom="@dimen/padding"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginStart="@dimen/margin1"
+            android:textSize="@dimen/littleText" />
     </LinearLayout>
 </LinearLayout>

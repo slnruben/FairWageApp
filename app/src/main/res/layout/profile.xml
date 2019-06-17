@@ -38,35 +38,38 @@
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.25"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_search" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                </Space>
 
                 <Button
                     android:id="@+id/editButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.25"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_edit"
                     android:clickable="false" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+                </Space>
 
                 <Button
                     android:id="@+id/negotationButton"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.25"
-                    android:background="@drawable/ic_contacts"
-                    android:clickable="false" />
-
-                <Button
-                    android:id="@+id/closeButton"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1.25"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_business_center"
-                    android:clickable="false" />
+                    android:clickable="false"/>
             </LinearLayout>
 
             <LinearLayout
@@ -417,7 +420,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/expirienceProfile" />
+                        android:text="@string/experienceProfile" />
 
                     <TextView
                         android:id="@+id/userExperience"

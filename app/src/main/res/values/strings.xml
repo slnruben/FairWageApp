@@ -2,22 +2,59 @@
     <string name="app_name">Fair Wage</string>
 
     <!--Login-->
-    <string name="askRegister">¿No eres miembro? Regístrate ahora.</string>
+    <string name="noMember">¿No eres miembro?</string>
+    <string name="askRegister">Regístrate ahora.</string>
 
     <!--Registro-->
     <string name="registerScreen">Pantalla de Registro</string>
-    <string name="askLogin">¿Ya registrado? Inicia sesión.</string>
+    <string name="isMember">¿Ya registrado?</string>
+    <string name="askLogin">Inicia sesión.</string>
     <string name="incorrectLogin">Login incorrecto</string>
 
     <!--Busqueda-->
     <string name="searchScreen">Pantalla de Búsqueda</string>
 
+    <!--Resultado busqueda-->
+    <string name="resultSearchScreen">Contactos Encontrados</string>
+
     <!--Usuario-->
     <string name="myemail">myemail</string>
+    <string name="netWage">Sueldo neto mensual</string>
     <string name="id">Id</string>
+    <string name="idLowcase">id</string>
     <string name="user">Usuario</string>
+    <string name="publicKey">Clave_Publica</string>
     <string name="password">Contraseña</string>
     <string name="nameInput">Introduzca nombre</string>
+    <string name="state">Estado</string>
+    <string name="oName">Ofrecido_Nombre</string>
+    <string name="oSurnames">Ofrecido_Apellidos</string>
+    <string name="oEmail">Ofrecido_Email</string>
+    <string name="oTelephone">Ofrecido_Telefono</string>
+    <string name="oJob">Ofrecido_Trabajo</string>
+    <string name="oCompany">Ofrecido_Empresa</string>
+    <string name="oWage">Ofrecido_Sueldo</string>
+    <string name="oUniversity">Ofrecido_Universidad</string>
+    <string name="oCareer">Ofrecido_Carrera</string>
+    <string name="oSector1">Ofrecido_Sector1</string>
+    <string name="oSector2">Ofrecido_Sector2</string>
+    <string name="oExperience">Ofrecido_Experiencia</string>
+    <string name="oLanguages">Ofrecido_Lenguajes</string>
+    <string name="oKnowledges">Ofrecido_Conocimientos</string>
+    <string name="rName">Requerido_Nombre</string>
+    <string name="rSurnames">Requerido_Apellidos</string>
+    <string name="rEmail">Requerido_Email</string>
+    <string name="rTelephone">Requerido_Telefono</string>
+    <string name="rJob">Requerido_Trabajo</string>
+    <string name="rCompany">Requerido_Empresa</string>
+    <string name="rWage">Requerido_Sueldo</string>
+    <string name="rUniversity">Requerido_Universidad</string>
+    <string name="rCareer">Requerido_Carrera</string>
+    <string name="rSector1">Requerido_Sector1</string>
+    <string name="rSector2">Requerido_Sector2</string>
+    <string name="rExperience">Requerido_Experiencia</string>
+    <string name="rLanguages">Requerido_Lenguajes</string>
+    <string name="rKnowledges">Requerido_Conocimientos</string>
 
     <!--Usuario Perfil-->
     <string name="profileScreen">Perfil de Usuario</string>
@@ -25,14 +62,14 @@
     <string name="surnamesProfile">Apellidos: </string>
     <string name="jobProfile">Trabajo: </string>
     <string name="companyProfile">Empresa: </string>
-    <string name="wageProfile">Sueldo: </string>
+    <string name="wageProfile">Sueldo neto mensual: </string>
     <string name="emailProfile">Email: </string>
     <string name="telephoneProfile">Teléfono: </string>
     <string name="universityProfile">Universidad: </string>
     <string name="careerProfile">Carrera: </string>
     <string name="sector1Profile">Sector 1: </string>
     <string name="sector2Profile">Sector 2: </string>
-    <string name="expirienceProfile">Experiencia: </string>
+    <string name="experienceProfile">Experiencia: </string>
     <string name="languagesProfile">Lenguajes: </string>
     <string name="knowledgesProfile">Conocimientos: </string>
     <string name="currency">€</string>
@@ -45,7 +82,7 @@
     <string name="company">Empresa</string>
     <string name="wage">Sueldo</string>
     <string name="email">Email</string>
-    <string name="telephone">Teléfono</string>
+    <string name="telephone">Telefono</string>
     <string name="university">Universidad</string>
     <string name="career">Carrera</string>
     <string name="sector1">Sector1</string>
@@ -59,7 +96,7 @@
     <string name="companyVisibility">Visibilidad_Empresa</string>
     <string name="wageVisibility">Visibilidad_Sueldo</string>
     <string name="emailVisibility">Visibilidad_Email</string>
-    <string name="telephoneVisibility">Visibilidad_Teléfono</string>
+    <string name="telephoneVisibility">Visibilidad_Telefono</string>
     <string name="universityVisibility">Visibilidad_Universidad</string>
     <string name="careerVisibility">Visibilidad_Carrera</string>
     <string name="sector1Visibility">Visibilidad_Sector1</string>
@@ -67,17 +104,29 @@
     <string name="experienceVisibility">Visibilidad_Experiencia</string>
     <string name="languagesVisibility">Visibilidad_Lenguajes</string>
     <string name="knowledgesVisibility">Visibilidad_Conocimientos</string>
+    <string name="telephoneAccent">Teléfono</string>
 
     <!--Listado de Perfiles-->
     <string name="contactListScreen">Listado de Contactos</string>
+    <string name="negotationListScreen">Listado de Negociaciones</string>
 
     <!--Perfil del Contacto-->
     <string name="contactProfileScreen">Perfil del Contacto</string>
 
     <!--Pantalla Envío Negociación-->
     <string name="negotiationRequestScreen">Pantalla de Negociación</string>
-    <string name="userData">Mis datos</string>
-    <string name="contactData">Datos contacto</string>
+    <string name="userData">Datos que doy</string>
+    <string name="contactData">Datos recibidos</string>
+
+    <!--Negociaciones-->
+    <string name="userCreator">Usuario_Creador</string>
+    <string name="userReceptor">Usuario_Receptor</string>
+    <string name="negotiationSended">Negociación enviada</string>
+    <string name="negotationAccepted">Negociación aceptada</string>
+    <string name="negotiationDeleted">Negociación eliminada</string>
+    <string name="seeNegotiation">Ver negociación</string>
+    <string name="refuseNegotiation">Rechazar Negociación</string>
+    <string name="deleteNegotiation">Eliminar Negociación</string>
 
     <!--Botones-->
     <string name="accept">Aceptar</string>
@@ -88,7 +137,47 @@
     <string name="save">Guardar</string>
     <string name="search">Buscar</string>
     <string name="logout">Desconectar</string>
+    <string name="exit">Salir</string>
 
     <!--Errores-->
     <string name="emptyFields">Hay campos importantes sin rellenar</string>
+    <string name="loginError">Los datos introducidos son incorrectos</string>
+    <string name="duplicatedUser">El usuario introducido no está disponible</string>
+    <string name="registerInternetRequired">Conexión a internet necesaria para registrarse</string>
+    <string name="internetRequired">Conexión a internet necesaria para ejecutar la operación</string>
+    <string name="updateError">Error al actualizar el perfil</string>
+    <string name="searchInternetRequired">Conexión a internet necesaria para ejecutar la operación</string>
+    <string name="searchError">Error al buscar contactos</string>
+    <string name="searchNegotationsError">Error al buscar mis negociaciones</string>
+    <string name="readError">Error al leer de la tabla de\u0020</string>
+    <string name="createNegotationError">Error al crear la negociación</string>
+    <string name="acceptedNegotationError">Error al aceptar la negociación</string>
+    <string name="deleteNegotiationError">Error al borrar la negociación</string>
+    <string name="noNegotiations">No hay negociaciones que mostrar</string>
+    <string name="oNameNeeded">Necesario tener el campo nombre en el perfil para enviar la negociación</string>
+    <string name="oSurnamesNeeded">Necesario tener el campo apellidos en el perfil para enviar la negociación</string>
+    <string name="oEmailNeeded">Necesario tener el campo email en el perfil para enviar la negociación</string>
+    <string name="oTelephoneNeeded">Necesario tener el campo teléfono en el perfil para enviar la negociación</string>
+    <string name="oJobNeeded">Necesario tener el campo trabajo en el perfil para enviar la negociación</string>
+    <string name="oCompanyNeeded">Necesario tener el campo empresa en el perfil para enviar la negociación</string>
+    <string name="oUniversityNeeded">Necesario tener el campo universidad en el perfil para enviar la negociación</string>
+    <string name="oCareerNeeded">Necesario tener el campo carrera en el perfil para enviar la negociación</string>
+    <string name="oSector1Needed">Necesario tener el campo sector 1 en el perfil para enviar la negociación</string>
+    <string name="oSector2Needed">Necesario tener el campo sector 2 en el perfil para enviar la negociación</string>
+    <string name="oExperienceNeeded">Necesario tener el campo experiencia en el perfil para enviar la negociación</string>
+    <string name="oLanguagesNeeded">Necesario tener el campo lenguajes en el perfil para enviar la negociación</string>
+    <string name="oKnowledgesNeeded">Necesario tener el campo conocimientos en el perfil para enviar la negociación</string>
+    <string name="rNameNeeded">Necesario tener el campo nombre en el perfil para aceptar la negociación</string>
+    <string name="rSurnamesNeeded">Necesario tener el campo apellidos en el perfil para aceptar la negociación</string>
+    <string name="rEmailNeeded">Necesario tener el campo email en el perfil para aceptar la negociación</string>
+    <string name="rTelephoneNeeded">Necesario tener el campo teléfono en el perfil para aceptar la negociación</string>
+    <string name="rJobNeeded">Necesario tener el campo trabajo en el perfil para aceptar la negociación</string>
+    <string name="rCompanyNeeded">Necesario tener el campo empresa en el perfil para aceptar la negociación</string>
+    <string name="rUniversityNeeded">Necesario tener el campo universidad en el perfil para aceptar la negociación</string>
+    <string name="rCareerNeeded">Necesario tener el campo carrera en el perfil para aceptar la negociación</string>
+    <string name="rSector1Needed">Necesario tener el campo sector 1 en el perfil para aceptar la negociación</string>
+    <string name="rSector2Needed">Necesario tener el campo sector 2 en el perfil para aceptar la negociación</string>
+    <string name="rExperienceNeeded">Necesario tener el campo experiencia en el perfil para aceptar la negociación</string>
+    <string name="rLanguagesNeeded">Necesario tener el campo lenguajes en el perfil para aceptar la negociación</string>
+    <string name="rKnowledgesNeeded">Necesario tener el campo conocimientos en el perfil para aceptar la negociación</string>
 </resources>

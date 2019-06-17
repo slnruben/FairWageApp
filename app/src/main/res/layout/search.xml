@@ -26,7 +26,6 @@
             style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/margin2"
             android:orientation="horizontal"
             android:weightSum="5">
 
@@ -35,33 +34,36 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.25"
+                android:layout_weight="1"
                 android:background="@drawable/ic_person" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </Space>
 
             <Button
                 android:id="@+id/editButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.25"
+                android:layout_weight="1"
                 android:background="@drawable/ic_edit"
                 android:clickable="false" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </Space>
 
             <Button
                 android:id="@+id/negotationButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.25"
-                android:background="@drawable/ic_contacts"
-                android:clickable="false" />
-
-            <Button
-                android:id="@+id/closeButton"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.25"
+                android:layout_weight="1"
                 android:background="@drawable/ic_business_center"
                 android:clickable="false" />
         </LinearLayout>
@@ -71,28 +73,32 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:id="@+id/wageInput"
-            android:hint="@string/wage" />
+            android:hint="@string/netWage"
+            tools:ignore="Autofill" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:id="@+id/jobInput"
-            android:hint="@string/job" />
+            android:hint="@string/job"
+            tools:ignore="Autofill" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:id="@+id/areaInput"
-            android:hint="@string/sector1" />
+            android:id="@+id/sector1Input"
+            android:hint="@string/sector1"
+            tools:ignore="Autofill" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:id="@+id/sectorInput"
-            android:hint="@string/sector2" />
+            android:id="@+id/sector2Input"
+            android:hint="@string/sector2"
+            tools:ignore="Autofill" />
 
         <EditText
             android:id="@+id/knowledgesInput"
@@ -100,7 +106,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/knowledges"
             android:inputType="text|textMultiLine"
-            android:lines="4" />
+            android:lines="4"
+            tools:ignore="Autofill" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -117,7 +124,8 @@
                 android:text="@string/search"
                 android:id="@+id/sendButton"
                 android:theme="@style/AppTheme.Button"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:layout_width="0dp"
@@ -125,7 +133,8 @@
                 android:text="@string/logout"
                 android:id="@+id/logoutButton"
                 android:theme="@style/AppTheme.Button"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
