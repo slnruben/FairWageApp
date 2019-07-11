@@ -9,3 +9,7 @@ En este trabajo fin de grado se ha seguido una metodología basada en desarrollo
 Para el desarrollo se han aplicado tecnologías y herramientas como Pencil, Android Studio, Java, PostgreSQL, Git, GitHub y Eclipse. Además, para la parte del servidor se ha utilizado Travis CI y el sistema de hosting de Heroku, permitiendo una integración y despliegue continuos del código mediante la automatización de Travis CI para validar, compilar los cambios subidos en GitHub y posteriormente desplegar el servidor actualizado en Heroku.
 
 Los resultados obtenidos ofrecen una valoración positiva de la aplicación, por su funcionalidad, su interfaz intuitiva y el cumplimiento de los objetivos.
+
+Última versión de la aplicación:
+
+https://drive.google.com/open?id=147_6vPLVN3m5qp9F_QEzamsDT2fZ47p8
