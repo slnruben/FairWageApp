@@ -11,7 +11,7 @@ import android.provider.BaseColumns;
  * @version 1
  */
 public class BBDDHelper extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 123;
+    private static final int DATABASE_VERSION = 127;
     private static final String DATABASE_NAME = "fairwage.db";
     private static final String TEXT_TYPE = " TEXT";
     private static final String BLOB_TYPE = " BLOB";
@@ -71,43 +71,39 @@ public class BBDDHelper extends SQLiteOpenHelper {
         public static final String TABLE_NAME = "contactos";
         static final String COLUMN_CONTACT_ID_0 ="id";
         public static final String COLUMN_CONTACT_SERVER_ID_1 ="id_Servidor";
-        static final String COLUMN_CONTACT_PUBLIC_KEY_2 ="Clave_Puplica";
-        static final String COLUMN_CONTACT_NAME_3 = "Nombre";
-        static final String COLUMN_CONTACT_SURNAMES_4 = "Apellidos";
-        static final String COLUMN_CONTACT_EMAIL_5 = "Email";
-        static final String COLUMN_CONTACT_TELEPHONE_6 = "Telefono";
-        static final String COLUMN_CONTACT_JOB_7 = "Trabajo";
-        static final String COLUMN_CONTACT_COMPANY_8 = "Empresa";
-        static final String COLUMN_CONTACT_WAGE_9 = "Sueldo";
-        static final String COLUMN_CONTACT_UNIVERSITY_10 = "Universidad";
-        static final String COLUMN_CONTACT_CAREER_11 = "Carrera";
-        static final String COLUMN_CONTACT_SECTOR_1_12 = "Sector1";
-        static final String COLUMN_CONTACT_SECTOR_2_13 = "Sector2";
-        static final String COLUMN_CONTACT_EXPERIENCE_14 = "Experiencia";
-        static final String COLUMN_CONTACT_LANGUAGES_15 = "Lenguajes";
-        static final String COLUMN_CONTACT_KNOWLEDGES_16 = "Conocimientos";
-        static final String COLUMN_CONTACT_STATE_17 = "Estado";
+        static final String COLUMN_CONTACT_NAME_2 = "Nombre";
+        static final String COLUMN_CONTACT_SURNAMES_3 = "Apellidos";
+        static final String COLUMN_CONTACT_EMAIL_4 = "Email";
+        static final String COLUMN_CONTACT_TELEPHONE_5 = "Telefono";
+        static final String COLUMN_CONTACT_JOB_6 = "Trabajo";
+        static final String COLUMN_CONTACT_COMPANY_7 = "Empresa";
+        static final String COLUMN_CONTACT_WAGE_8 = "Sueldo";
+        static final String COLUMN_CONTACT_UNIVERSITY_9 = "Universidad";
+        static final String COLUMN_CONTACT_CAREER_10 = "Carrera";
+        static final String COLUMN_CONTACT_SECTOR_1_11 = "Sector1";
+        static final String COLUMN_CONTACT_SECTOR_2_12 = "Sector2";
+        static final String COLUMN_CONTACT_EXPERIENCE_13 = "Experiencia";
+        static final String COLUMN_CONTACT_LANGUAGES_14 = "Lenguajes";
+        static final String COLUMN_CONTACT_KNOWLEDGES_15 = "Conocimientos";
 
         private static final String SQL_CREATE_ENTRIES =
                 "CREATE TABLE IF NOT EXISTS " + DataContact.TABLE_NAME + " (" +
                         DataContact.COLUMN_CONTACT_ID_0 + " INTEGER PRIMARY KEY," +
                         DataContact.COLUMN_CONTACT_SERVER_ID_1 + INTEGER_TYPE + " UNIQUE" + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_PUBLIC_KEY_2 + TEXT_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_NAME_3 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_SURNAMES_4 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_EMAIL_5 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_TELEPHONE_6 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_JOB_7 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_COMPANY_8 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_WAGE_9 + TEXT_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_UNIVERSITY_10 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_CAREER_11 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_SECTOR_1_12 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_SECTOR_2_13 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_EXPERIENCE_14 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_LANGUAGES_15 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_KNOWLEDGES_16 + BLOB_TYPE + COMMA_SEP +
-                        DataContact.COLUMN_CONTACT_STATE_17 + BLOB_TYPE + " )";
+                        DataContact.COLUMN_CONTACT_NAME_2 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_SURNAMES_3 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_EMAIL_4 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_TELEPHONE_5 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_JOB_6 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_COMPANY_7 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_WAGE_8 + TEXT_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_UNIVERSITY_9 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_CAREER_10 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_SECTOR_1_11 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_SECTOR_2_12 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_EXPERIENCE_13 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_LANGUAGES_14 + BLOB_TYPE + COMMA_SEP +
+                        DataContact.COLUMN_CONTACT_KNOWLEDGES_15 + BLOB_TYPE + " )";
 
         private static final String SQL_DELETE_ENTRIES =
                 "DROP TABLE IF EXISTS " + DataContact.TABLE_NAME;
@@ -132,7 +128,6 @@ public class BBDDHelper extends SQLiteOpenHelper {
         static final String COLUMN_CONTACT_EXPERIENCE_14 = "Experiencia";
         static final String COLUMN_CONTACT_LANGUAGES_15 = "Lenguajes";
         static final String COLUMN_CONTACT_KNOWLEDGES_16 = "Conocimientos";
-        static final String COLUMN_CONTACT_STATE_17 = "Estado";
 
         static final String SQL_CREATE_ENTRIES =
                 "CREATE TABLE IF NOT EXISTS " + DataSearchContact.TABLE_NAME + " (" +
@@ -152,8 +147,7 @@ public class BBDDHelper extends SQLiteOpenHelper {
                         DataSearchContact.COLUMN_CONTACT_SECTOR_2_13 + TEXT_TYPE + COMMA_SEP +
                         DataSearchContact.COLUMN_CONTACT_EXPERIENCE_14 + TEXT_TYPE + COMMA_SEP +
                         DataSearchContact.COLUMN_CONTACT_LANGUAGES_15 + TEXT_TYPE + COMMA_SEP +
-                        DataSearchContact.COLUMN_CONTACT_KNOWLEDGES_16 + TEXT_TYPE + COMMA_SEP +
-                        DataSearchContact.COLUMN_CONTACT_STATE_17 + TEXT_TYPE + " )";
+                        DataSearchContact.COLUMN_CONTACT_KNOWLEDGES_16 + TEXT_TYPE + " )";
 
         static final String SQL_DELETE_ENTRIES =
                 "DROP TABLE IF EXISTS " + DataSearchContact.TABLE_NAME;
@@ -235,36 +229,6 @@ public class BBDDHelper extends SQLiteOpenHelper {
                 "DROP TABLE IF EXISTS " + DataSearchNegotation.TABLE_NAME;
     }
 
-    public static class DataState implements BaseColumns {
-        public static final String TABLE_NAME = "estados";
-        static final String COLUMN_STATE_ID_0 ="id";
-        static final String COLUMN_NAME_1 ="Nombre";
-
-        private static final String SQL_CREATE_ENTRIES =
-                "CREATE TABLE IF NOT EXISTS " + DataState.TABLE_NAME + " (" +
-                        DataState.COLUMN_STATE_ID_0 + " INTEGER PRIMARY KEY," +
-                        DataState.COLUMN_NAME_1 + " )";
-
-        private static final String SQL_DELETE_ENTRIES =
-                "DROP TABLE IF EXISTS " + DataState.TABLE_NAME;
-    }
-
-    public static class DataRelationContactUser implements BaseColumns {
-        public static final String TABLE_NAME = "contacto_usuario";
-        static final String COLUMN_ID_0 ="id";
-        static final String COLUMN_USER_ID_1 ="id_Usuario";
-        static final String COLUMN_CONTACT_ID_1 ="id_Contacto";
-
-        private static final String SQL_CREATE_ENTRIES =
-                "CREATE TABLE IF NOT EXISTS " + DataRelationContactUser.TABLE_NAME + " (" +
-                        DataRelationContactUser.COLUMN_ID_0 + " INTEGER PRIMARY KEY," +
-                        DataRelationContactUser.COLUMN_USER_ID_1 + INTEGER_TYPE + COMMA_SEP +
-                        DataRelationContactUser.COLUMN_CONTACT_ID_1 + " )";
-
-        private static final String SQL_DELETE_ENTRIES =
-                "DROP TABLE IF EXISTS " + DataRelationContactUser.TABLE_NAME;
-    }
-
     public BBDDHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -275,8 +239,6 @@ public class BBDDHelper extends SQLiteOpenHelper {
         db.execSQL(DataContact.SQL_CREATE_ENTRIES);
         db.execSQL(DataSearchContact.SQL_CREATE_ENTRIES);
         db.execSQL(DataSearchNegotation.SQL_CREATE_ENTRIES);
-        db.execSQL(DataState.SQL_CREATE_ENTRIES);
-        db.execSQL(DataRelationContactUser.SQL_CREATE_ENTRIES);
     }
 
     @Override
@@ -286,8 +248,6 @@ public class BBDDHelper extends SQLiteOpenHelper {
             db.execSQL(DataContact.SQL_DELETE_ENTRIES);
             db.execSQL(DataSearchContact.SQL_DELETE_ENTRIES);
             db.execSQL(DataSearchNegotation.SQL_DELETE_ENTRIES);
-            db.execSQL(DataState.SQL_DELETE_ENTRIES);
-            db.execSQL(DataRelationContactUser.SQL_DELETE_ENTRIES);
             onCreate(db);
         }
     }

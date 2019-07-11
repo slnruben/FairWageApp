@@ -38,7 +38,7 @@ public class BBDDUtil {
     public static ContentValues createContactBBDDValues(Contact user) {
         ContentValues values = new ContentValues();
         values.put(BBDDHelper.DataContact.COLUMN_CONTACT_SERVER_ID_1, user.getIdServer());
-        values.put(BBDDHelper.DataContact.COLUMN_CONTACT_WAGE_9, user.getWage());
+        values.put(BBDDHelper.DataContact.COLUMN_CONTACT_WAGE_8, user.getWage());
         return values;
     }
 
@@ -75,20 +75,20 @@ public class BBDDUtil {
         try {
             Cipher cipher = Cipher.getInstance(ALGORITHM);
             cipher.init(Cipher.ENCRYPT_MODE, publicKey);
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_NAME_3, cipher.doFinal(user.getName().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_SURNAMES_4, cipher.doFinal(user.getSurnames().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_EMAIL_5, cipher.doFinal(user.getEmail().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_TELEPHONE_6, cipher.doFinal(user.getTelephone().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_JOB_7, cipher.doFinal(user.getJob().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_COMPANY_8, cipher.doFinal(user.getCompany().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_WAGE_9, user.getWage());
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_UNIVERSITY_10, cipher.doFinal(user.getUniversity().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_CAREER_11, cipher.doFinal(user.getCareer().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_SECTOR_1_12, cipher.doFinal(user.getSector1().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_SECTOR_2_13, cipher.doFinal(user.getSector2().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_EXPERIENCE_14, cipher.doFinal(user.getExperience().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_LANGUAGES_15, cipher.doFinal(user.getLanguages().getBytes()));
-            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_KNOWLEDGES_16, cipher.doFinal(user.getKnowledges().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_NAME_2, cipher.doFinal(user.getName().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_SURNAMES_3, cipher.doFinal(user.getSurnames().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_EMAIL_4, cipher.doFinal(user.getEmail().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_TELEPHONE_5, cipher.doFinal(user.getTelephone().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_JOB_6, cipher.doFinal(user.getJob().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_COMPANY_7, cipher.doFinal(user.getCompany().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_WAGE_8, user.getWage());
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_UNIVERSITY_9, cipher.doFinal(user.getUniversity().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_CAREER_10, cipher.doFinal(user.getCareer().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_SECTOR_1_11, cipher.doFinal(user.getSector1().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_SECTOR_2_12, cipher.doFinal(user.getSector2().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_EXPERIENCE_13, cipher.doFinal(user.getExperience().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_LANGUAGES_14, cipher.doFinal(user.getLanguages().getBytes()));
+            values.put(BBDDHelper.DataContact.COLUMN_CONTACT_KNOWLEDGES_15, cipher.doFinal(user.getKnowledges().getBytes()));
         } catch (Exception e) {
             Log.e("error", "ERROR DE CIFRADO " + e);
         }

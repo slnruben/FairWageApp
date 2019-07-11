@@ -106,7 +106,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.AcceptedContactProfile"
+            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.AcceptedContactProfileActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.urjc.rubnsnchez.fairwage.app.negotiations.RenegotiateNegotiationActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

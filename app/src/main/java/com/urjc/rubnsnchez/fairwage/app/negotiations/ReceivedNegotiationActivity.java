@@ -69,6 +69,7 @@ public class ReceivedNegotiationActivity extends Activity {
     Contact user;
     Negotiation negotiation;
     PublicKey contactPublicKey;
+    String publicKeyString;
 
     private void setSwitches() {
         if (user.getUser().equals(negotiation.getUserCreator())) {
@@ -248,7 +249,7 @@ public class ReceivedNegotiationActivity extends Activity {
             Thread tr = new Thread() {
                 @Override
                 public void run() {
-                    String publicKeyString = sendDataPOST(context, urlServer, GET_CONTACT_PUBLIC_KEY, postDataParams);
+                    publicKeyString = sendDataPOST(context, urlServer, GET_CONTACT_PUBLIC_KEY, postDataParams);
                     if (publicKeyString != null && !publicKeyString.trim().isEmpty()) {
                         contactPublicKey = stringToPublicKey(publicKeyString);
                     } else {
@@ -300,6 +301,7 @@ public class ReceivedNegotiationActivity extends Activity {
         Button deleteButton = findViewById(R.id.deleteButton);
         Button refuseButton = findViewById(R.id.refuseButton);
         Button cancelButton = findViewById(R.id.cancelButton);
+        Button renegotiateButton = findViewById(R.id.renegotiateButton);
         final Context context = getApplicationContext();
         String myUser = ((MyApplication) context).getUser();
         user = getUserData(context, myUser, NEGOTIATION);
@@ -311,22 +313,25 @@ public class ReceivedNegotiationActivity extends Activity {
             retrieveContactPublicKey();
         }
         if (user.getUser().equals(negotiation.getUserCreator())) {
-            LinearLayout.LayoutParams pDelete = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT);
-            LinearLayout.LayoutParams pCancel = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT);
-            pDelete.weight = (float) 1.5;
-            pDelete.gravity = Gravity.CENTER_VERTICAL;
-            pCancel.weight = (float) 1.5;
-            pCancel.gravity = Gravity.CENTER_VERTICAL;
+
+            //LinearLayout.LayoutParams pDelete = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT);
+            //LinearLayout.LayoutParams pCancel = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT);
+            //pDelete.weight = (float) 1.5;
+            //pDelete.gravity = Gravity.CENTER_VERTICAL;
+            //pCancel.weight = (float) 2;
+            //pCancel.gravity = Gravity.CENTER_VERTICAL;
 
             acceptButton.setVisibility(View.GONE);
             deleteButton.setVisibility(View.VISIBLE);
-            deleteButton.setLayoutParams(pDelete);
+            //deleteButton.setLayoutParams(pDelete);
             refuseButton.setVisibility(View.GONE);
-            cancelButton.setLayoutParams(pCancel);
+            renegotiateButton.setVisibility(View.GONE);
+            //cancelButton.setLayoutParams(pCancel);
         }
         acceptButton.setOnClickListener(new ReceivedNegotiationActivity.acceptButtonListener());
         deleteButton.setOnClickListener(new ReceivedNegotiationActivity.deleteButtonListener());
         refuseButton.setOnClickListener(new ReceivedNegotiationActivity.refuseButtonListener());
+        renegotiateButton.setOnClickListener(new ReceivedNegotiationActivity.renegotiateButtonListener());
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -474,7 +479,7 @@ public class ReceivedNegotiationActivity extends Activity {
                         public void run() {
                             String success = sendDataPOST(context, urlServer, ACCEPT_NEGOTIATION, postDataParams);
                             if (String.valueOf(SUCCESS).equals(success)) {
-                                Intent intent = new Intent(ReceivedNegotiationActivity.this, AcceptedContactProfile.class);
+                                Intent intent = new Intent(ReceivedNegotiationActivity.this, AcceptedContactProfileActivity.class);
                                 Bundle bundle = createFullNegotiationBundle(negotiation);
                                 intent.putExtras(bundle);
                                 startActivity(intent);
@@ -603,6 +608,17 @@ public class ReceivedNegotiationActivity extends Activity {
             } else {
                 Toast.makeText(context, getString(R.string.internetRequired), Toast.LENGTH_SHORT).show();
             }
+        }
+    }
+
+    private class renegotiateButtonListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(ReceivedNegotiationActivity.this, RenegotiateNegotiationActivity.class);
+            Bundle bundle = createFullNegotiationBundle(negotiation);
+            bundle.putString(String.valueOf(R.string.publicKey), publicKeyString);
+            intent.putExtras(bundle);
+            startActivity(intent);
         }
     }
 }

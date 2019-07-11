@@ -127,6 +127,7 @@
     <string name="seeNegotiation">Ver negociación</string>
     <string name="refuseNegotiation">Rechazar Negociación</string>
     <string name="deleteNegotiation">Eliminar Negociación</string>
+    <string name="renegotiateNegotiation">Renegociar</string>
 
     <!--Botones-->
     <string name="accept">Aceptar</string>
@@ -149,6 +150,7 @@
     <string name="searchInternetRequired">Conexión a internet necesaria para ejecutar la operación</string>
     <string name="searchError">Error al buscar contactos</string>
     <string name="searchNegotationsError">Error al buscar mis negociaciones</string>
+    <string name="renegotiateNegotiationError">Error al mandar la renegociación</string>
     <string name="readError">Error al leer de la tabla de\u0020</string>
     <string name="createNegotationError">Error al crear la negociación</string>
     <string name="acceptedNegotationError">Error al aceptar la negociación</string>

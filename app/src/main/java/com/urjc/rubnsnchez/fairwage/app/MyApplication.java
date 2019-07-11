@@ -21,6 +21,7 @@ public class MyApplication extends Application {
     public static final String ACCEPT_NEGOTIATION = "accept_negotiation";
     public static final String REFUSE_NEGOTIATION = "refuse_negotiation";
     public static final String DELETE_NEGOTIATION = "delete_negotiation";
+    public static final String UPDATE_NEGOTIATION = "update_negotiation";
     public static final String GET_CONTACT_PUBLIC_KEY = "get_contact_public_key";
     public static final String LOGIN_SERVER = "login";
     public static final int REGISTER = 0;

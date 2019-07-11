@@ -28,7 +28,7 @@ import static com.urjc.rubnsnchez.fairwage.app.common.Util.sendDataPOST;
 import static com.urjc.rubnsnchez.fairwage.app.common.Util.setTexts;
 import static com.urjc.rubnsnchez.fairwage.app.common.Util.stripCode;
 
-public class AcceptedContactProfile extends Activity {
+public class AcceptedContactProfileActivity extends Activity {
     private Contact contact;
 
     private void setTextViews(Context context) {
@@ -110,7 +110,7 @@ public class AcceptedContactProfile extends Activity {
                     if (String.valueOf(SUCCESS).equals(success)) {
                         final int numRows = tableRowCount(context, BBDDHelper.DataSearchNegotation.TABLE_NAME);
                         if (numRows > 0) {
-                            Intent sendIntent = new Intent(AcceptedContactProfile.this, NegotationListActivity.class);
+                            Intent sendIntent = new Intent(AcceptedContactProfileActivity.this, NegotationListActivity.class);
                             startActivity(sendIntent);
                         } else {
                             runOnUiThread(new Thread(new Runnable() {
@@ -118,7 +118,7 @@ public class AcceptedContactProfile extends Activity {
                                     Toast.makeText(context, getString(R.string.noNegotiations), Toast.LENGTH_LONG).show();
                                 }
                             }));
-                            Intent sendIntent = new Intent(AcceptedContactProfile.this, SearchActivity.class);
+                            Intent sendIntent = new Intent(AcceptedContactProfileActivity.this, SearchActivity.class);
                             startActivity(sendIntent);
                         }
                     } else {
@@ -167,7 +167,7 @@ public class AcceptedContactProfile extends Activity {
         }
         setTextViews(context);
         Button exitButton = findViewById(R.id.exitButton);
-        exitButton.setOnClickListener(new AcceptedContactProfile.sendButtonListener());
+        exitButton.setOnClickListener(new AcceptedContactProfileActivity.sendButtonListener());
     }
 
     /**

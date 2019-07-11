@@ -176,42 +176,42 @@ public class Contact {
         } else {
             this.id = c.getInt(0);
             this.idServer = c.getInt(1);
-            this.name = decrypt(privateKey, c.getBlob(3));
-            this.surnames = decrypt(privateKey, c.getBlob(4));
-            this.email = decrypt(privateKey, c.getBlob(5));
-            this.telephone = decrypt(privateKey, c.getBlob(6));
-            this.job = decrypt(privateKey, c.getBlob(7));
-            this.company = decrypt(privateKey, c.getBlob(8));
-            if ("".equals(c.getString(9))) {
+            this.name = decrypt(privateKey, c.getBlob(2));
+            this.surnames = decrypt(privateKey, c.getBlob(3));
+            this.email = decrypt(privateKey, c.getBlob(4));
+            this.telephone = decrypt(privateKey, c.getBlob(5));
+            this.job = decrypt(privateKey, c.getBlob(6));
+            this.company = decrypt(privateKey, c.getBlob(7));
+            if ("".equals(c.getString(8))) {
                 this.wage = "0";
             } else {
-                this.wage = c.getString(9);
+                this.wage = c.getString(8);
             }
-            this.university = decrypt(privateKey, c.getBlob(10));
-            this.career = decrypt(privateKey, c.getBlob(11));
-            this.sector1 = decrypt(privateKey, c.getBlob(12));
-            this.sector2 = decrypt(privateKey, c.getBlob(13));
-            this.experience = decrypt(privateKey, c.getBlob(14));
-            this.languages = decrypt(privateKey, c.getBlob(15));
-            this.knowledges = decrypt(privateKey, c.getBlob(16));
+            this.university = decrypt(privateKey, c.getBlob(9));
+            this.career = decrypt(privateKey, c.getBlob(10));
+            this.sector1 = decrypt(privateKey, c.getBlob(11));
+            this.sector2 = decrypt(privateKey, c.getBlob(12));
+            this.experience = decrypt(privateKey, c.getBlob(13));
+            this.languages = decrypt(privateKey, c.getBlob(14));
+            this.knowledges = decrypt(privateKey, c.getBlob(15));
             //this.state = c.getString(17);
-            this.user = c.getString(20);
-            this.password = c.getString(21);
-            this.privateKey = c.getBlob(22);
-            this.publicKey = c.getBlob(23);
-            this.nameVisibility = c.getInt(24);
-            this.surnamesVisibility = c.getInt(25);
-            this.emailVisibility = c.getInt(26);
-            this.telephoneVisibility = c.getInt(27);
-            this.jobVisibility = c.getInt(28);
-            this.companyVisibility = c.getInt(29);
-            this.universityVisibility = c.getInt(30);
-            this.careerVisibility = c.getInt(31);
-            this.sector1Visibility = c.getInt(32);
-            this.sector2Visibility = c.getInt(33);
-            this.experienceVisibility = c.getInt(34);
-            this.languagesVisibility = c.getInt(35);
-            this.knowledgesVisibility = c.getInt(36);
+            this.user = c.getString(18);
+            this.password = c.getString(19);
+            this.privateKey = c.getBlob(20);
+            this.publicKey = c.getBlob(21);
+            this.nameVisibility = c.getInt(22);
+            this.surnamesVisibility = c.getInt(23);
+            this.emailVisibility = c.getInt(24);
+            this.telephoneVisibility = c.getInt(25);
+            this.jobVisibility = c.getInt(26);
+            this.companyVisibility = c.getInt(27);
+            this.universityVisibility = c.getInt(28);
+            this.careerVisibility = c.getInt(29);
+            this.sector1Visibility = c.getInt(30);
+            this.sector2Visibility = c.getInt(31);
+            this.experienceVisibility = c.getInt(32);
+            this.languagesVisibility = c.getInt(33);
+            this.knowledgesVisibility = c.getInt(34);
         }
     }
 
