@@ -14,6 +14,52 @@
         android:textSize="@dimen/title"
         android:gravity="center_horizontal"/>
 
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/searchButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_search" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/editButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_edit"
+            android:clickable="false" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/negotationButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_business_center"
+            android:clickable="false"/>
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,476 +73,422 @@
             android:orientation="vertical">
 
             <LinearLayout
-                style="?android:attr/buttonBarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/layoutName"
+                android:gravity="end"
                 android:orientation="horizontal"
-                android:weightSum="5">
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/nameProfile" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
 
                 <Button
-                    android:id="@+id/searchButton"
-                    style="?android:attr/buttonBarButtonStyle"
+                    android:id="@+id/nameVisibility"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_search" />
-
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" >
-                </Space>
-
-                <Button
-                    android:id="@+id/editButton"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_edit"
-                    android:clickable="false" />
-
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" >
-                </Space>
-
-                <Button
-                    android:id="@+id/negotationButton"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_business_center"
-                    android:clickable="false"/>
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/margin2"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutSurnames"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutName"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="3"
+                    android:text="@string/surnamesProfile" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/nameProfile" />
-
-                    <TextView
-                        android:id="@+id/userName"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/nameVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/userSurnames"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutSurnames"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/surnamesProfile" />
-
-                    <TextView
-                        android:id="@+id/userSurnames"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/surnamesVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/surnamesVisibility"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutEmail"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/emailProfile" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutEmail"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
 
-                    <TextView
-                        android:id="@+id/userEmail"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1" />
-
-                    <Button
-                        android:id="@+id/emailVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutTelephone"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="3"
+                    android:text="@string/emailProfile" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/telephoneProfile" />
-
-                    <TextView
-                        android:id="@+id/userTelephone"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/telephoneVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutJob"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/jobProfile" />
-
-                    <TextView
-                        android:id="@+id/userJob"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/jobVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/emailVisibility"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutCompany"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/companyProfile" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutTelephone"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
 
-                    <TextView
-                        android:id="@+id/userCompany"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/companyVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutWage"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="3"
+                    android:text="@string/telephoneProfile" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/wageProfile" />
-
-                    <TextView
-                        android:id="@+id/userWage"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/userTelephone"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutUniversity"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/universityProfile" />
-
-                    <TextView
-                        android:id="@+id/userUniversity"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/universityVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/telephoneVisibility"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutCareer"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/careerProfile" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutJob"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
 
-                    <TextView
-                        android:id="@+id/userCareer"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/careerVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutSector1"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="3"
+                    android:text="@string/jobProfile" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/sector1Profile" />
-
-                    <TextView
-                        android:id="@+id/userSector1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/sector1Visibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/userJob"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutSector2"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/sector2Profile" />
-
-                    <TextView
-                        android:id="@+id/userSector2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/sector2Visibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/jobVisibility"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutExperience"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/experienceProfile" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutCompany"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
 
-                    <TextView
-                        android:id="@+id/userExperience"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/experienceVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutLanguages"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="3"
+                    android:text="@string/companyProfile" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/languagesProfile" />
-
-                    <TextView
-                        android:id="@+id/userLanguages"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
-
-                    <Button
-                        android:id="@+id/languagesVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/userCompany"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layoutKnowledges"
-                    android:gravity="end"
-                    android:orientation="horizontal"
-                    android:weightSum="11">
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:text="@string/knowledgesProfile" />
+                <Button
+                    android:id="@+id/companyVisibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/userKnowledges"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_marginStart="@dimen/margin1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutWage"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
 
-                    <Button
-                        android:id="@+id/knowledgesVisibility"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:layout_marginStart="@dimen/margin2"
-                        android:background="@drawable/ic_visibility_off" />
-                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/wageProfile" />
+
+                <TextView
+                    android:id="@+id/userWage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutUniversity"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/universityProfile" />
+
+                <TextView
+                    android:id="@+id/userUniversity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:id="@+id/universityVisibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutCareer"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/careerProfile" />
+
+                <TextView
+                    android:id="@+id/userCareer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:id="@+id/careerVisibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutSector1"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/sector1Profile" />
+
+                <TextView
+                    android:id="@+id/userSector1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:id="@+id/sector1Visibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutSector2"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/sector2Profile" />
+
+                <TextView
+                    android:id="@+id/userSector2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:id="@+id/sector2Visibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutExperience"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/experienceProfile" />
+
+                <TextView
+                    android:id="@+id/userExperience"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:id="@+id/experienceVisibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutLanguages"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/languagesProfile" />
+
+                <TextView
+                    android:id="@+id/userLanguages"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:id="@+id/languagesVisibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutKnowledges"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="11">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/knowledgesProfile" />
+
+                <TextView
+                    android:id="@+id/userKnowledges"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_marginStart="@dimen/margin1"/>
+
+                <Button
+                    android:id="@+id/knowledgesVisibility"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginStart="@dimen/margin2"
+                    android:background="@drawable/ic_visibility_off" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

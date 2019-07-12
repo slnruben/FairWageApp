@@ -4,11 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="15"
     android:background="@color/white">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/editScreen"
         android:textColor="@color/white"
         android:background="@color/black"
@@ -17,9 +19,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
         android:layout_gravity="center_vertical"
         android:layout_margin="@dimen/margin2"
+
         android:orientation="vertical">
 
         <LinearLayout
@@ -480,33 +484,33 @@
                     android:background="@drawable/ic_visibility_off"
                     android:contentDescription="@string/knowledges" />
             </LinearLayout>
-
-            <LinearLayout
-                style="?android:attr/buttonBarStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin2"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
-                <Button
-                    android:id="@+id/saveButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/save"
-                    android:theme="@style/AppTheme.Button"
-                    tools:ignore="ButtonStyle" />
-
-                <Button
-                    android:id="@+id/cancelButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/cancel"
-                    android:theme="@style/AppTheme.Button"
-                    tools:ignore="ButtonStyle" />
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="@dimen/margin2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:theme="@style/AppTheme.Button"
+            tools:ignore="ButtonStyle,NestedWeights" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:theme="@style/AppTheme.Button"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
 </LinearLayout>
